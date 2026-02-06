@@ -1,0 +1,26 @@
+body.dark {
+	--head-color: #fff;
+	--stext-color: #fff;
+	--stext-color2: #000;
+	--text-color: #fff;
+   	--wtitile-color: #fff;
+	--wtext-color: #fff;
+	--bg-color: #000;
+	--border-color: #404040;
+	--box-color: #222;
+	--blog-backcolor: #000;
+	--blog-color: #fff;
+	--wrap-color: #000;
+	/* header */
+	--headbg-color: #000;
+	--headmenu-color: #fff;
+   /* footer  */
+	--ftbackcolor: #111;
+	--ftwtitile-color: #fff;
+	--ftwtext-color: #999;
+  	--bxsh: 0 4px 10px rgba(185, 185, 185, 0.1);
+  	--bxshover: 0 4px 60px 0 rgba(185, 185, 185, 0.2);
+  	--bxbr: 3px solid #fff;
+  	/* title */
+    --tac: #1c1c1c;
+}

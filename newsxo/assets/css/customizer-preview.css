@@ -1,0 +1,39 @@
+/* ==========================================================================
+  Theme Customizer Editor Icon
+========================================================================== */
+.newsxo-customizer-target-btn {
+  color: #fff;
+  background: #3582c4 !important;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 1px rgba(60, 67, 74, .15);
+  text-shadow: 0 -1px 1px #135e96, 1px 0 1px #135e96, 0 1px 1px #135e96, -1px 0 1px #135e96;
+}
+.customize-partial-edit-shortcut button,
+.widget .customize-partial-edit-shortcut button,
+.newsxo-customizer-target-btn {
+  font-size: 18px !important;
+  padding: 3px !important;
+  border-radius: 50% !important;
+}
+.newsxo-customizer-target-btn:hover {
+  background: #4f94d4 !important;
+}
+.header-ads .newsxo-customizer-edit-icon {
+  left: 18%;
+  top: -14%;
+}
+.collapse.navbar-collapse .newsxo-customizer-edit-icon {
+  left: 3.5%;
+  top: 7%;
+}
+.back-img .newsxo-customizer-edit-icon[type_id="newsxo_footer_widget_background"] {
+  top: 0%;
+  left: 2.5%;
+}
+#main-nav .newsxo-customizer-edit-icon {
+  z-index: 99999;
+}
+.bs-widget-title .customize-partial-edit-shortcut.customize-partial-edit-shortcut-select_category_title{
+  display: block;
+}

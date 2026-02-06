@@ -1,0 +1,118 @@
+.rtl{
+    // topbar
+    .bs-headtwo .bs-head-detail .top-date {
+        margin-right: 0px;
+        margin-left: 15px;
+    }
+    .bs-head-detail .top-date .day{
+        margin-right: 0;
+        margin-left: 6px;
+    }
+    // docker
+    .bs-offcanvas.end {
+        left: -450px;
+        right: unset;
+    }
+    .bs-offcanvas.from-right {
+        left: 0;
+    }
+    .bs-widget-title{
+        &.one{
+            .border-line{
+                &::before{
+                    left: auto;
+                    right: 0;
+                }
+                &::after{
+                    left: auto;
+                    right: 36px;
+                }
+            }
+        }
+    }
+    .right-nav .bs-cart .bs-cart-total {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    // 
+    .bs-latest-news-slider .swiper-button-next {
+        left: 0 !important;
+        right: unset !important;
+    }
+    .bs-latest-news-slider .swiper-button-prev {
+        left: calc(0% - -50px) !important;
+        right: unset !important;
+    }
+    .bs-latest-news .bs-latest-news-slider {
+        padding-right: 20px;
+        padding-left: unset;
+    }
+    // meta
+    .bs-blog-meta span.bs-author img {
+        margin-left: 8px;
+        margin-right: 1px;
+    }
+    .bs-blog-meta span:before {
+        margin-left: 0.5rem;
+    }
+    .wp-block-latest-posts li::before, .wp-block-categories-list li::before, .wp-block-categories__list li::before, .wp-block-archives-list li::before, .bs-widget .wp-block-latest-posts li::before, .bs-widget .wp-block-categories-list li::before, .bs-widget .wp-block-categories__list li::before, .bs-widget .wp-block-archives-list li::before {        
+        margin-left: 8px;
+        margin-right: 0px;
+    }
+    .bs-blog-category a i {
+        margin-left: 3px;
+        margin-right: 0px;
+    }
+    .missed .wd-back .swiper-pagination {
+        right: unset;
+        left: 0;
+    }
+    .bs_upscr {
+        right: unset;
+        left: 1%;
+    }
+    .bs-breadcrumb-section .overlay .breadcrumb .breadcrumb-item + .breadcrumb-item::before{
+        float: none;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea,
+    select {
+        text-align: right;
+    }
+    
+    .wpcf7-submit.has-spinner{
+        float: right;
+    }
+    @media(min-width: 992px){
+        .sidebar-right #sidebar-right {
+            padding-right: 30px;
+            padding-left: 0px;
+        }
+    }
+    @media(max-width: 991px){
+        .menu-btn {
+            margin-left: 1.4rem;
+            margin-right: 0rem;
+        }
+    }
+    .bs-blog-post .title-wrap .btn-wrap a i{
+        transform: rotate(-145deg);
+    }
+}
+body.rtl{
+    text-align: right;
+}

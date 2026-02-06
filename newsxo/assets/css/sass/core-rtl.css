@@ -1,0 +1,106 @@
+.rtl .bs-headtwo .bs-head-detail .top-date {
+  margin-right: 0px;
+  margin-left: 15px;
+}
+.rtl .bs-head-detail .top-date .day {
+  margin-right: 0;
+  margin-left: 6px;
+}
+.rtl .bs-offcanvas.end {
+  left: -450px;
+  right: unset;
+}
+.rtl .bs-offcanvas.from-right {
+  left: 0;
+}
+.rtl .bs-widget-title.one .border-line::before {
+  left: auto;
+  right: 0;
+}
+.rtl .bs-widget-title.one .border-line::after {
+  left: auto;
+  right: 36px;
+}
+.rtl .right-nav .bs-cart .bs-cart-total {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.rtl .bs-latest-news-slider .swiper-button-next {
+  left: 0 !important;
+  right: unset !important;
+}
+.rtl .bs-latest-news-slider .swiper-button-prev {
+  left: calc(0% + 50px) !important;
+  right: unset !important;
+}
+.rtl .bs-latest-news .bs-latest-news-slider {
+  padding-right: 20px;
+  padding-left: unset;
+}
+.rtl .bs-blog-meta span.bs-author img {
+  margin-left: 8px;
+  margin-right: 1px;
+}
+.rtl .bs-blog-meta span:before {
+  margin-left: 0.5rem;
+}
+.rtl .wp-block-latest-posts li::before, .rtl .wp-block-categories-list li::before, .rtl .wp-block-categories__list li::before, .rtl .wp-block-archives-list li::before, .rtl .bs-widget .wp-block-latest-posts li::before, .rtl .bs-widget .wp-block-categories-list li::before, .rtl .bs-widget .wp-block-categories__list li::before, .rtl .bs-widget .wp-block-archives-list li::before {
+  margin-left: 8px;
+  margin-right: 0px;
+}
+.rtl .bs-blog-category a i {
+  margin-left: 3px;
+  margin-right: 0px;
+}
+.rtl .missed .wd-back .swiper-pagination {
+  right: unset;
+  left: 0;
+}
+.rtl .bs_upscr {
+  right: unset;
+  left: 1%;
+}
+.rtl .bs-breadcrumb-section .overlay .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  float: none;
+}
+.rtl input[type=text],
+.rtl input[type=email],
+.rtl input[type=url],
+.rtl input[type=password],
+.rtl input[type=search],
+.rtl input[type=number],
+.rtl input[type=tel],
+.rtl input[type=range],
+.rtl input[type=date],
+.rtl input[type=month],
+.rtl input[type=week],
+.rtl input[type=time],
+.rtl input[type=datetime],
+.rtl input[type=datetime-local],
+.rtl input[type=color],
+.rtl textarea,
+.rtl select {
+  text-align: right;
+}
+.rtl .wpcf7-submit.has-spinner {
+  float: right;
+}
+@media (min-width: 992px) {
+  .rtl .sidebar-right #sidebar-right {
+    padding-right: 30px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .rtl .menu-btn {
+    margin-left: 1.4rem;
+    margin-right: 0rem;
+  }
+}
+.rtl .bs-blog-post .title-wrap .btn-wrap a i {
+  transform: rotate(-145deg);
+}
+
+body.rtl {
+  text-align: right;
+}/*# sourceMappingURL=core-rtl.css.map */
