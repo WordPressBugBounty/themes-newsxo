@@ -29,7 +29,6 @@ $related_post_title = get_theme_mod('newsxo_related_post_title', esc_html__('Rel
                     $url=  !empty( $newsxo_url ) ? 'style="background-image: url(' . esc_url( $newsxo_url ) . ');"' : ''; ?>
                     <div class="bs-blog-post three md bshre mb-lg-0">
                         <figure class="bs-thumb-bg back-img" <?php echo ($url); ?>></figure>
-                        <a class="link-div" href="<?php the_permalink(); ?>"></a>
                         <div class="inner">
                             <?php if($enable_category == true) { newsxo_post_categories(); } ?>
                             <h4 class="title md"> 
@@ -38,12 +37,13 @@ $related_post_title = get_theme_mod('newsxo_related_post_title', esc_html__('Rel
                                 </a>
                             </h4> 
                             <div class="bs-blog-meta">
-                            <?php if($enable_admin == true){ 
+                                <?php if($enable_admin == true){ 
                                     newsxo_author_content(); 
-                                } if($enable_date == true) {
-                                    newsxo_date_content(); 
-                                } ?>
+                                    } if($enable_date == true) {
+                                        newsxo_date_content(); 
+                                        } ?>
                             </div>
+                            <a class="link-div" href="<?php the_permalink(); ?>"></a>
                         </div>
                     </div> 
                 <?php }

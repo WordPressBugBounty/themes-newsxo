@@ -31,15 +31,15 @@ if($you_missed_enable == true) { ?>
                 $url=  !empty( $newsxo_url ) ? 'style="background-image: url(' . esc_url( $newsxo_url ) . ');"' : ''; ?>
                 <div class="bs-blog-post three md bshre mb-0">
                   <figure class="bs-thumb-bg back-img" <?php echo ($url); ?>></figure>
+                  <div class="inner">
+                    <?php newsxo_post_categories(); ?>
+                    <div class="title-wrap">
+                      <h4 class="title bsm"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                      <div class="btn-wrap">
+                        <a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div> 
                     <a class="link-div" href="<?php the_permalink(); ?>"></a>
-                    <div class="inner">
-                      <?php newsxo_post_categories(); ?>
-                      <div class="title-wrap">
-                        <h4 class="title bsm"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                        <div class="btn-wrap">
-                          <a href="<?php the_permalink(); ?>"><i class="fas fa-arrow-right"></i></a>
-                        </div>
-                      </div> 
                     </div>
                   </div>
               <?php endwhile; endif; wp_reset_postdata(); ?> 
