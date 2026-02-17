@@ -67,7 +67,7 @@
                                         <p class="mb-0">
                                             <?php echo esc_html($copyright); ?>
                                             <span class="sep"> | </span>
-                                            <?php  printf(esc_html__('%1$s by %2$s.', 'newsxo'), '<a href="#" target="_blank">Newsxo</a>', '<a href="https://themeansar.com" target="_blank">Themeansar</a>'); ?>
+                                            <?php  printf(esc_html__('%1$s by %2$s.', 'newsxo'), '<a href="https://themeansar.com/free-themes/newsxo-free-magazine-blog-wordpress-theme/" target="_blank">Newsxo</a>', '<a href="https://themeansar.com" target="_blank">Themeansar</a>'); ?>
                                         </p>
                                     <?php } ?>                                       
                                 </div>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div> 
-                <?php } ?> 
+                <?php } ?>
         </div>
         <!--/overlay-->
     </footer>
