@@ -11,13 +11,21 @@
     <!--==================== FOOTER AREA ====================-->
     <?php $footer_bg_img = newsxo_get_option('newsxo_footer_bg_img');
     $newsxo_footer_overlay_color = get_theme_mod('newsxo_footer_overlay_color');
-    function get_footer_bg_img() {
-        if ( newsxo_get_option('newsxo_footer_bg_img') > 0 ) {
-            return wp_get_attachment_url( newsxo_get_option('newsxo_footer_bg_img') );
+    if ( ! function_exists('get_footer_bg_img') ) {
+        function get_footer_bg_img() {
+            $img_id = newsxo_get_option('newsxo_footer_bg_img');
+            if ($img_id) {
+                return wp_get_attachment_url($img_id);
+            }
+            return '';
         }
-    } ?>
-    <footer class="footer one <?php echo esc_attr($footer_bg_img != '' ? 'back-img' : '' ); ?>"
-    <?php if($footer_bg_img != '') { ?> style="background-image:url('<?php echo get_footer_bg_img()?>');" <?php } ?> >
+    }
+
+    $footer_bg_url = get_footer_bg_img();
+    ?>
+
+    <footer class="footer one<?php echo esc_attr($footer_bg_url ? ' back-img' : ''); ?>"
+    <?php if($footer_bg_url) { ?> style="background-image:url('<?php echo esc_url($footer_bg_url); ?>');" <?php } ?>>
         <div class="overlay" style="background-color: <?php echo esc_html($newsxo_footer_overlay_color);?>;">
             <!--Start bs-footer-widget-area-->
             <?php if ( is_active_sidebar( 'footer_widget_area' ) ) { ?>
